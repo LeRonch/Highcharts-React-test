@@ -177,7 +177,7 @@ const SolidGauge = (props) => {
 
   return (
     <>
-      <h2 style={{textAlign: 'center'}}>SolidGauge</h2>
+      <h2 style={{textAlign: 'center'}}>Solid Gauge</h2>
 
       <HighchartsReact
         highcharts  = {Highcharts}
