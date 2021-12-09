@@ -10,31 +10,33 @@ const App = () =>{
   // function handleclick qui clear interval et qui navigate
   return (
     
+    <div>
+
+      <h1 style={{textAlign: 'center'}}>
+        Intégration de graphiques Hightcharts avec React
+      </h1>
+
+      <hr style={{marginLeft    : '12.5%',
+                  marginRight   : '12.5%',
+                  marginTop     : '40px', 
+                  marginBottom  : '45px'}}
+      />
+
       <div>
-        <div>
-          <SolidGauge/>
-        </div>
-
-        <div>
-          <MasterDetail/>
-        </div>
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/solid-gauge">Solid Gauge</Link>
-            </li>
-            <li>
-              <Link to="/master-detail">Master Detail</Link>
-            </li>
-          </ul>
-        </nav> */}
-
-        {/* <Routes>
-          <Route path="/master-detail" element={<MasterDetail/>} />
-          <Route path="/solid-gauge" element={<SolidGauge/>} />
-        </Routes> */}
-
+        <SolidGauge/>
       </div>
+
+      <hr style={{marginLeft    : '12.5%',
+                  marginRight   : '12.5%',
+                  marginTop     : '40px', 
+                  marginBottom  : '45px'}}
+      />
+
+      <div>
+        <MasterDetail/>
+      </div>
+  
+    </div>
   )
 }
     

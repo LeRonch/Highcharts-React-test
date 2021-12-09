@@ -176,19 +176,21 @@ const SolidGauge = (props) => {
   }, []);
 
   return (
-    <div>
-      <h1>SolidGauge</h1>
+    <>
+      <h2 style={{textAlign: 'center'}}>SolidGauge</h2>
+
       <HighchartsReact
         highcharts  = {Highcharts}
         options     = {chartRpmOptionsState}
         ref         = {chartRPMRef}
       />
+
       <HighchartsReact
         highcharts  = {Highcharts}
         options     = {chartSpeedOptionsState}
         ref         = {chartSpeedRef}
       />
-    </div>
+    </>
   );
 };
 

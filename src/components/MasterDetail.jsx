@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
-import Data from "./data/data.js";
+import Data from "../data/data.js";
 
 export default function MasterDetail (){
 
@@ -249,9 +249,12 @@ const Charts = () => {
 
 return(
   <>
-    <h1>
+
+    <h2 style={{textAlign     : 'center', 
+                marginBottom  : '30px'}}
+    >
       Master Detail
-    </h1>
+    </h2>
 
     <Charts/>
   </>
