@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate
+} from "react-router-dom";
 
-function App() {
+import MasterDetail from './components/MasterDetail.jsx'
+import SolidGauge from './components/SolidGauge.jsx'
+
+const App = () =>{
+  // const history = useHistory()
+  // console.log(history);
+  // Les links remplacé par un btn 
+  // function handleclick qui clear interval et qui navigate
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    
+      <div>
+        <div>
+          <SolidGauge/>
+        </div>
+        
+        <div>
+          <MasterDetail/>
+        </div>
+        {/* <nav>
+          <ul>
+            <li>
+              <Link to="/solid-gauge">Solid Gauge</Link>
+            </li>
+            <li>
+              <Link to="/master-detail">Master Detail</Link>
+            </li>
+          </ul>
+        </nav> */}
 
+        {/* <Routes>
+          <Route path="/master-detail" element={<MasterDetail/>} />
+          <Route path="/solid-gauge" element={<SolidGauge/>} />
+        </Routes> */}
+
+      </div>
+  )
+}
+    
 export default App;
