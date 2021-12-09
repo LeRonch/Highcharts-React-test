@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import HighchartsReact from "highcharts-react-official";
-import Highcharts, { registerRendererType } from "highcharts";
+import Highcharts from "highcharts";
 import Data from "./data/data.js";
-import { render } from "react-dom";
 
 export default function MasterDetail (){
 
@@ -109,7 +108,7 @@ const Charts = () => {
     }
   });
 
-  const [chartOptions, setChartOptions] = useState({
+  const [chartOptions] = useState({
       chart: {
         height: 100,
         reflow: false,
@@ -253,7 +252,7 @@ return(
     <h1>
       Master Detail
     </h1>
-    
+
     <Charts/>
   </>
 );
