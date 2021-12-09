@@ -131,7 +131,6 @@ const chartSpeedOptions = Highcharts.merge(gaugeOptions, {
 
 });
 
-
 const SolidGauge = (props) => {
   const chartRPMRef = useRef(null);
   const [chartRpmOptionsState] = useState(chartRpmOptions);
@@ -171,7 +170,7 @@ const SolidGauge = (props) => {
         }
 
         point.update(newVal);
-      }, 2000);
+      }, 1500);
 
   }, []);
 
