@@ -14,7 +14,10 @@ const App = () =>{
         Intégration de graphiques Hightcharts avec React
       </h1>
 
-      <a href="https://github.com/LeRonch/Highcharts-React-test" target='_blank'>
+      <a  href="https://github.com/LeRonch/Highcharts-React-test" 
+          target='_blank'
+          rel="noreferrer" 
+      >
         <h2 style={{textAlign: 'center'}}>
           GitHub Repository
         </h2>

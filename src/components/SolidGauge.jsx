@@ -159,7 +159,7 @@ const SolidGauge = (props) => {
         point.update(newVal);
         // chart RPM
 
-        console.log(chartRpmOptions);
+        // console.log(chartRpmOptions);
 
         point = RPMchart.series[0].points[0];
         inc = Math.random() - 0.5;
