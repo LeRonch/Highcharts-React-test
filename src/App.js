@@ -5,12 +5,15 @@ import SolidGauge from './components/SolidGauge.jsx'
 
 const App = () =>{
 
-  return (
+  document.title = 'React Highcharts'
+
+  return (    
     
-    <div>
+    <>
 
       <h1 style={{textAlign     : 'center',
-                  marginBottom  : '45px'}}>
+                  marginBottom  : '45px'}}
+      >
         Intégration de graphiques Hightcharts avec React
       </h1>
 
@@ -43,7 +46,7 @@ const App = () =>{
         <MasterDetail/>
       </div>
   
-    </div>
+    </>
   )
 }
     
