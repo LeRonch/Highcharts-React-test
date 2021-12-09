@@ -12,16 +12,16 @@ detailStart = data[0][0];
 
 const LineChart = (props) => {
   return (
-    <div> 
+    <> 
       <HighchartsReact highcharts={Highcharts} options={props.options} />
       <MasterChart />
-    </div>
+    </>
   );
 };
 
   const MasterChart = (props) => {
     return (
-      <div>
+      <>
         <div
           style={{
             width: "100%"
@@ -29,7 +29,7 @@ const LineChart = (props) => {
         >
           <HighchartsReact highcharts={Highcharts} options={props.options} />
         </div>
-      </div>
+      </>
     );
   };
 
@@ -240,16 +240,15 @@ const Charts = () => {
     });
 
     return (
-      <div>
+      <>
         <LineChart options={chartLineOptions}/>
         <MasterChart options={chartOptions}/>
-      </div>
+      </>
     )
 };
 
 return(
   <>
-
     <h2 style={{textAlign     : 'center', 
                 marginBottom  : '30px'}}
     >
